@@ -1,0 +1,13 @@
+body{
+  background-color: #C8B6A6;
+  background-image: url("C:/Users/anjan/Downloads/book2.jpg");
+}
+.login_block{
+  position: absolute;
+}
+.title{
+  font-family: 'Sacramento', cursive;
+}
+h2{
+  font-family: 'Delicious Handrawn', cursive;
+}

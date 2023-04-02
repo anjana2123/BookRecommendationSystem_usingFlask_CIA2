@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/styles3.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fasthand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="title">
+            <div class="content">
+                <h1>Literary Mystic</h1>
+                <h2>Find your next page-turner with our expertly curated book suggestions.</h2>
+
+                <form action="predict" method="post">
+                 <br></br>
+                  <br></br>
+                    <h3>Ready to read your next? Enter your Favourites and we will recommend you more!!!.</h3>
+                    <div class="mov">
+                        <input type="text" name="movie" placeholder="Enter you fav book name">
+                        <button type="Submit">Recommend</button>
+                    </div>
+                    {{err}}
+                </form>
+                <br/><br/>
+               <ul class="rounded-list">
+                {% for user in users %}
+                    <li style="opacity:0; transition: 200ms all">{{ user }}</li>
+                {% endfor %}
+               </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const items = document.querySelectorAll(".rounded-list li");
+        console.log(items)
+
+        for (var i = 0; i < items.length; i++) {
+            const li = items[i]
+            setTimeout(() => { li.style.opacity = "1" }, 200*i)
+        }
+    </script>
+
+</body>
+</html>

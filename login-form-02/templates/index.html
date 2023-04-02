@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>♥Literary Mystic♥</title>
+<link rel="stylesheet" href="../static/css/styles1.css">
+</head>
+<body>
+  <td><h1>LITERARY MYSTIC</h1>
+  <p><em><strong>Welcome to our book recommendation page!<strong></em></p>
+    <p><i>We are thrilled that you are interested in discovering new books to read. By registering with us, you will have access to personalized recommendations based on your reading preferences and interests.
+    Whether you're looking for a new fiction novel to escape into, a non-fiction book to learn something new, or a self-help book to improve your life, we've got you covered. Our team of book experts and algorithms will work together to curate a list of books that we think you'll love.
+    So, what are you waiting for? Sign up now to unlock your personalized book recommendations and embark on a literary adventure!</i></p>
+  </td>
+
+<form action="reg" method="post">
+ <div class="Wrapper">
+   <h2><bold>Register Page</bold></h2>
+    <table cellspacing="20">
+    <p>Fill this form to create an account.</p>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" >
+    <br></br>
+    <label for="password"><b>Set Password</b></label>
+    <input type="password" placeholder="New Password" name="password">
+    <button type="submit" class="registerbtn"><b>Register</b></button>
+    <p>Already have an account? <a href={{url_for("register")}}>Sign in</a>.</p>
+    </div>
+</form>
+</body>
+
+</html>
